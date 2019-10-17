@@ -1,0 +1,26 @@
+example:
+    property: "I AM IN THE DEV"
+spring:
+    jpa:
+        database: "POSTGRESQL"
+        show-sql: "true"
+        properties:
+            hibernate:
+                dialect: "org.hibernate.dialect.PostgreSQLDialect"
+                ddl-auto: "validate"
+    datasource:
+        platform:  "postgres"
+        url: "jdbc:postgresql://database:5432/eagle_eye_local"
+        username: "root"
+        password: "{cipher}d20acf93399a1498dad07c52e3645cf150f6f59a53e57136786263464bcadaf4"
+        testWhileIdle: "true"
+        validationQuery: "SELECT 1"
+
+    database:
+        driverClassName: "org.postgresql.Driver"
+
+redis:
+    server: "redis"
+    port: "6379"
+signing:
+    key: "345345fsdfsf5345"
